@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: purple;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url(Babylon5poster.jpeg);
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.featured {
+    text-align: center;
+    width: 50% auto;
+    background-color: lightcoral;
+}
+
+.episode-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.character-card {
+    text-align: center;
+    margin: 15px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.gallery {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 50000s;
+  }
+  
+  .gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .gallery img:first-child {
+    opacity: 1;
+  }
+  
+  .gallery:hover img {
+    opacity: 1.5;
+  }
+  
+  .gallery:hover img:hover {
+    opacity: 3;
+  }
+
+.gallery img.active {
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(B5ship.jpeg);
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    animation: carouselAnimation 60s linear infinite; /* Adjust the duration as needed */
+}
+
+.carousel-slide img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes carouselAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.character-card
+{
+background-color:silver;
+}
+
+h2{
+    size: 30px;
+    color: #333;
+}
